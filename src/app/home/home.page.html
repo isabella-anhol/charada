@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Charada #??
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button class="dica" color="primary" shape="circle">
+    <ion-img src="../../assets/icon/lamp-64.png"></ion-img>
+  </ion-button>
+
+  <div>
+    <ion-label *ngFor="let item of prg; let i = index">
+      {{item.pergunta}}
+    </ion-label>
+
+    <ion-button color="secondary" (click)="chamarCharada()">
+      Pular charada
+    </ion-button>
+
+    <ion-button color="secondary" (click)="mostrarCharada()">
+      Resposta
+    </ion-button>
+
+    <div *ngIf="!result">
+      <div [class.bounce-in-top]="!result" *ngFor="let item of prg; let i = index">
+        {{item.resposta}}
+      </div>
+    </div>
+  </div>
+</ion-content>

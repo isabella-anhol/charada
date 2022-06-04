@@ -1,0 +1,31 @@
+
+
+ion-header{
+    --ion-background-color: #004aad;
+    --ion-text-color: white;
+    text-align: center
+}
+
+ion-content{
+    div {
+        height: 100%;
+        width: 100%;
+        display: justify;
+        justify-content: center;
+        align-items: center;
+      }
+
+    ion-button[shape=circle] {
+        --border-radius: 50%;
+        width: 64px;
+        height: 64px;
+    }
+    --ion-background-color:#18baff;
+    --ion-text-color: white;
+    text-align: center
+}
+
+ion-content ion-button {
+    --ion-background-color:white;
+    --ion-text-color: black;
+}
